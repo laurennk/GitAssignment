@@ -1,0 +1,32 @@
+a)  Counting objects: 4, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (4/4), 519 bytes | 0 bytes/s, done.
+    Total 4 (delta 1), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+    To https://github.com/laurennk/GitAssignment.git
+       f6e9897..e8db42c  master -> master
+
+b)  12 (git rev-list --all --count)  
+
+c)  Thu Sep 15 10:29:34 2016 (git log -1 --format=%cd .gitignore)
+
+d)  BasicWeapon:    2
+    Sword:          2
+    Weapon:         2
+    WeaponFactory:  2
+    RoleGame:       2
+    README.md:      3
+    (git log --pretty=format: --name-only | sort | uniq -c | sort -rg)
+
+e)  git log shows the log of past commits to the repository, while git
+    status shows which files are being tracked to be commited from the
+    local repository
+
+f)  git log --follow RoleGame.java
+
+g)  git log --all --grep='file'
+
+h)  git shortlog -sne --since="01 Jan 2015" --before="01 Feb 2015" 
+    --author=Alice
+
