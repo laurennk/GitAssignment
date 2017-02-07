@@ -12,9 +12,21 @@ public class RoleGame {
         Weapon sword = WeaponFactory.getWeapon("sword");
         System.out.println("Sword has " + sword.hit() + " of damage.");
         int armor = 20;
-        System.out.println("Swords was able to do " + sword.hit(armor) + " of damage due to an armor with " + armor + " points.");
+        System.out.println("Sword was able to do " + sword.hit(armor) + " of damage due to an armor with " + armor + " points.");
 
         //TODO: Add the remaining weapons here
+        Weapon simpleArrow = WeaponFactory.getWeapon("simpleArrow");
+        System.out.println("Simple arrow has " + simpleArrow.hit() + " of damage.");
+        armor = 20;
+        System.out.println("Simple arrow was able to do " + simpleArrow.hit(armor) + " of damage due to an armor with " + armor + " points.");
 
+        Weapon simpleAxe = WeaponFactory.getWeapon("simpleAxe");
+        System.out.println("Simple axe has " + simpleAxe.hit() + " of damage.");
+        armor = 20;
+        System.out.println("Simple axe was able to do " + simpleAxe.hit(armor) + " of damage due to an armor with " + armor + " points.");
+
+        Weapon simpleMagicStaff = WeaponFactory.getWeapon("simpleMagicStaff");
+        System.out.println("Simple magic staff has " + simpleMagicStaff.hit() + " of damage.");
+        System.out.println("Simple magic staff was able to do " + simpleMagicStaff.hit(armor) + " of damage due to an armor with " + armor + " points.");
     }
 }
